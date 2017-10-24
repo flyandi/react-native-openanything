@@ -1,0 +1,49 @@
+{
+  "name": "react-native-openanything",
+  "version": "1.0.0",
+  "description": "Open anything in React Native, like phone, email, sms, web address, iMessage  (iOS only), etc.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flyandi/react-native-openanything.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "email",
+    "phone",
+    "text",
+    "sms",
+    "iMessage",
+    "communications",
+    "ios",
+    "android",
+    "react-component"
+  ],
+  "author": "Andy Schwarz <flyandi@yahoo.com> (http://flyandi.net)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/flyandi/react-native-anything/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/flyandi/react-native-openanything/issues"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "homepage": "https://github.com/flyandi/react-native-openanything#readme",
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "jest": "^21.2.1",
+    "react-native": "^0.49.3",
+    "react-test-renderer": "^16.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0"
+  }
+}
