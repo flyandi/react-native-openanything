@@ -12,7 +12,16 @@ Supports call, email, text (sms), iMessage (iOS only), Map, PDF, etc.
 npm install react-native-openanything
 ```
 
----
+## General Guide
+
+This library is promise based and each method returns a promise. 
+
+```js
+    import {Call} from 'react-native-openanything';
+
+    Call('+155555555555').catch(err => console.error(err));
+```
+
 
 ## Available Methods
 
@@ -130,6 +139,45 @@ Facetime(target, audioOnly = false)
 |---|---|---|
 |**`target`**|A string that representing a phone number or a username.| Required|
 |**`audioOnly`**|A boolean value indicating if facetime is an audio call|`false` `optional`|
+
+## Low level methods
+
+**Note**: You should only use these methods if you know what you doing.
+
+---
+
+Supported - checks if a deep linking URL is supported on the current device.
+
+```js
+Supported(url)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`url`**|The url to check.| Required|
+
+---
+
+Open - opens an deep linking URL.
+
+```js
+Open(url)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`url`**|The url to open.| Required|
+
+---
+
+Launch - Combines `Supported` and `Open`
+
+```js
+Launch(url)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`url`**|The url to verify and open.| Required|
+
+
 
 ## Examples
 
