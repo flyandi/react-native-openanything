@@ -7,5 +7,9 @@ import {Text} from './text';
 import {Web} from './web';
 import {Map} from './map';
 import {Launch, Supported, Open} from './launcher';
+import {Twitter} from './twitter'
+import {Youtube} from './youtube';
+import {Facetime} from './facetime';
+import {Facebook} from './facebook';
 
-export {Call, Email, Text, Web, Launch, Supported, Open, Map}
+export {Call, Email, Text, Web, Launch, Supported, Open, Map, Twitter, Youtube, Facetime, Facebook}

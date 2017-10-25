@@ -85,8 +85,53 @@ Map(address)
 
 **Note**: You can either provide an `string` or an `array` with `latitude` and `longitude` to this method.
 
+---
 
-## Example
+Opens a YouTube Video
+
+```js
+Youtube(video)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`video`**|A string that contains the Youtube video id.| Required|
+
+---
+
+Opens a Twitter
+
+```js
+Twitter(user)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`user`**|A string that contains the Twitter User Id that should be open.| Required|
+
+---
+
+Opens a Facebook
+
+```js
+Facebook(user)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`user`**|A string that contains the Facebook User Id that should be open.| Required|
+
+---
+
+`Only iOS`
+Launch Facetime
+
+```js
+Facetime(target, audioOnly = false)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`target`**|A string that representing a phone number or a username.| Required|
+|**`audioOnly`**|A boolean value indicating if facetime is an audio call|`false` `optional`|
+
+## Examples
 
 You can either import specific modules:
 
