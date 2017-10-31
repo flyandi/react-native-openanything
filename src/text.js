@@ -31,20 +31,20 @@ const Text = (phone, message = null, autoEncode = true) => {
 
         let url = TEXT + phone;
 
-        if(body) {
+        if(message) {
 
-            if (!_.isString(phone)) reject('The provided body needs to be a string');
+            if (!_.isString(phone)) reject('The provided message needs to be a string');
 
             if (autoEncode) {
 
                 if (Platform.OS === 'android') {
-                    body = encodeURIComponent(body)
+                    message = encodeURIComponent(message)
                 }
 
-                body = encodeURIComponent(body);
+                message = encodeURIComponent(message);
             }
 
-            url += Platform.OS === 'ios' ? `&body=${body}` : `?body=${body}`;
+            url += Platform.OS === 'ios' ? `&body=${message}` : `?body=${message}`;
         }
 
         Launch(url).then(() => resolve()).catch(error => reject(error));
