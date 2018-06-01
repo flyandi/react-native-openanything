@@ -220,6 +220,22 @@ Launch(url)
 |**`url`**|The url to verify and open.| Required|
 
 
+## Issues and how to resolve them
+
+# App is not allowed to query scheme
+
+On iOS you might run into this issue. The reaon is that you have to explicit add the requesting query schemes into the pinfo.list variable `LSApplicationQueriesSchemes`.
+
+e.g. for Facebook you would add `fb`. Please refer to the example list below for the correct query scheme string:
+
+| Target | Query Scheme |
+|---|---|
+|**Facebook**|`fb`|
+|**Instagram**|`instagram`|
+|**Twitter**|`twitter`|
+|**LinkedIn**|`linkedin`|
+|**WhatsApp**|`whatsapp`|
+
 
 ## Examples
 
