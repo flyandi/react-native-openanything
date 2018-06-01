@@ -219,10 +219,11 @@ Launch(url)
 |---|---|---|
 |**`url`**|The url to verify and open.| Required|
 
+---
 
 ## Issues and how to resolve them
 
-# App is not allowed to query scheme
+### App is not allowed to query scheme
 
 On iOS you might run into this issue. The reaon is that you have to explicit add the requesting query schemes into the pinfo.list variable `LSApplicationQueriesSchemes`.
 
