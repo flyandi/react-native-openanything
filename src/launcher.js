@@ -33,7 +33,7 @@ const Open = (url) =>
 /**
  * Launches a requested url
  * @param url
- * @constructor
+ * @returns {Promise}
  */
 const Launch = (url) =>
 {
@@ -50,11 +50,29 @@ const Launch = (url) =>
     });
 }
 
+
+/**
+ * Launches a request url based on a string
+ * param @name
+ * param @url
+ * @returns {Promise}
+ */
+const LaunchString = (name, url) =>
+{
+    return new Promise((resolve, reject) => {
+
+        if (!_.isString(name)) reject('The provided ' + name + ' must be a string');
+
+        Launch(url).then(() => resolve()).catch(error => reject(error));
+    });
+}
+
 /**
  * @exports
  */
 export {
     Launch,
+    LaunchString,
     Supported,
     Open
 };

@@ -107,7 +107,7 @@ Youtube(video)
 
 ---
 
-Opens a Twitter
+Opens Twitter
 
 ```js
 Twitter(user)
@@ -118,7 +118,7 @@ Twitter(user)
 
 ---
 
-Opens a Facebook
+Opens Facebook
 
 ```js
 Facebook(user)
@@ -126,6 +126,48 @@ Facebook(user)
 | Parameter | Description | Default |
 |---|---|---|
 |**`user`**|A string that contains the Facebook User Id that should be open.| Required|
+
+---
+
+Opens Instagram User, Media, Camera, App, Location and Tag
+
+```js
+Instagram(user)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`user`**|A string that contains the Instagram User Id that should be open.| Required|
+
+```js
+InstagramMedia(media)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`user`**|A string that contains the Instagram Media Id that should be open.| Required|
+
+```js
+InstagramLocation(location)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`user`**|A string that contains the Instagram Location Id that should be open.| Required|
+
+```js
+InstagramTag(tag)
+```
+| Parameter | Description | Default |
+|---|---|---|
+|**`user`**|A string that contains the Instagram Tag Id that should be open.| Required|
+
+```js
+InstagramApp()
+```
+Opens the Instagram App.
+
+```js
+InstagramCamera()
+```
+Opens the Instagram Camera.
 
 ---
 
