@@ -13,7 +13,7 @@ import _ from 'lodash';
 /**
  * @type {string}
  */
-const PDF = 'pdf:';
+//const PDF = 'pdf:';
 
 
 /**
