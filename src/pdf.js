@@ -13,7 +13,7 @@ import _ from 'lodash';
 /**
  * @type {string}
  */
-//const PDF = 'pdf:';
+const PDF = 'pdf:';
 
 
 /**
@@ -22,7 +22,7 @@ import _ from 'lodash';
  * @returns {Promise}
  * @constructor
  */
-const PDF = (filename) =>
+const Pdf = (filename) =>
 {
     return new Promise((resolve, reject) => {
 
@@ -39,5 +39,5 @@ const PDF = (filename) =>
  * @exports
  */
 export {
-    PDF
+    Pdf
 }
