@@ -1,6 +1,6 @@
 {
   "name": "react-native-openanything",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Open anything in React Native, like phone, email, sms, web address, iMessage  (iOS only), etc.",
   "main": "src/index.js",
   "repository": {
