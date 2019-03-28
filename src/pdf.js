@@ -22,13 +22,13 @@ const PDF = 'pdf:';
  * @returns {Promise}
  * @constructor
  */
-const PDF = (filename) =>
+const Pdf = (filename) =>
 {
     return new Promise((resolve, reject) => {
 
-        if (!_.isString(phone)) reject('The provided filename number must be a string');
+        if (!_.isString(filename)) reject('The provided filename number must be a string');
 
-        Launch(url).then(() => resolve()).catch(error => {
+        Launch(filename).then(() => resolve()).catch(error => {
 
             reject(error);
         });
@@ -39,5 +39,5 @@ const PDF = (filename) =>
  * @exports
  */
 export {
-    PDF
+    Pdf
 }

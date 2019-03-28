@@ -12,5 +12,6 @@ import {Youtube} from './youtube';
 import {Facetime} from './facetime';
 import {Facebook} from './facebook';
 import {Instagram, InstagramMedia, InstagramApp, InstagramCamera, InstagramTag, InstagramLocation} from './instagram';
+import {Pdf} from './pdf';
 
-export {Call, Email, Text, Web, Launch, Supported, Open, Map, Twitter, Youtube, Facetime, Facebook, Instagram, InstagramMedia, InstagramApp, InstagramCamera, InstagramTag, InstagramLocation}
+export {Call, Email, Text, Web, Launch, Supported, Open, Map, Twitter, Youtube, Facetime, Facebook, Instagram, InstagramMedia, InstagramApp, InstagramCamera, InstagramTag, InstagramLocation, Pdf}
