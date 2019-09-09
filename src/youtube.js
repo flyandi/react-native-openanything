@@ -13,7 +13,7 @@ import _ from 'lodash';
 /**
  * @type {string}
  */
-const YOUTUBE = 'http://www.youtube.com/v/';
+const YOUTUBE = 'https://www.youtube.com/watch?v=';
 
 
 
@@ -22,8 +22,7 @@ const YOUTUBE = 'http://www.youtube.com/v/';
  * @param video
  * @returns {Promise}
  */
-const Youtube = (video) =>
-{
+const Youtube = (video) => {
     return new Promise((resolve, reject) => {
 
         const url = YOUTUBE + video;
